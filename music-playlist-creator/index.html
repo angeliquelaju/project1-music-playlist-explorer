@@ -11,17 +11,52 @@
 </head>
 <body>
     <header>
-        <!-- Your header content here -->
+        <h1 id = "banner">Music Playlist Explorer</h1>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search playlists..." />
+            <span id="search-icon" class="search-icon">&#128269;</span> 
+            <span id="clear-icon" class="clear-icon">&#10006;</span>  
+        </div>
+        <div class="sort-container">
+            <label for="sort-dropdown">Sort By:</label>
+            <select id="sort-dropdown">
+                <option value="" disabled selected>Select Sort Option</option>
+                <option value="name">Playlist Name (A-Z)</option>
+                <option value="likes">Number of Likes</option>
+                <option value="date">Date Added</option>
+            </select>
+        </div>
+        <p class = "nav">
+            <a href = "featured.html">Featured</a>
+            <a href = "index.html">All</a>
+        </p>
     </header>
 
-    <main> 
-        <!-- Your main content here -->
+    <main>
+        <div id = "playlist-cards" class = "playlist-grid">
+            <!--cards put here-->
+        </div>
     </main>
 
-    <footer>
-        <!-- Your footer content here -->
-    </footer>
+    <div class = "modal" id = "playlistModal">
+        <div class = "modal-content">
+            <span class = "close">&times;</span>
+            <div class = "titlePic">
+                <img id = "modalCover" src = "">
+                <div class = "formatTitle">
+                    <h3 id = "modalTitle"></h2>
+                    <p id = "modalAuthor"></p>
+                </div>
+            </div>
+            <button id="shuffleButton">Shuffle</button>
+            <ul id = "modalSongs"></ul>
+        </div>
+    </div>
     <script src="data/data.js"></script>
     <script src="script.js"></script>
+    <footer>
+        <!-- Your footer content here -->
+         <p>valerie laju</p>
+    </footer>
 </body>
 </html>

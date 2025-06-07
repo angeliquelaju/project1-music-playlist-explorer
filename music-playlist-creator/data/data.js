@@ -2,10 +2,11 @@ let playlists = [
 	{
 		playlistID: 1,
 		playlist_name: "cool",
-		playlist_author: "m",
-		playlist_art: "assets/img/coldplay.jpeg",
+		playlist_author: "mn",
+		playlist_art: "assets/img/cool.jpg",
         featured: true,
-        likes: 64,
+        likes: 0,
+        dateAdded: '2024-01-15',
 		songs: [
             {
                 cover: "assets/img/moonmusic.png",
@@ -40,10 +41,11 @@ let playlists = [
     {
         playlistID: 2,
 		playlist_name: "best",
-		playlist_author: "n",
-		playlist_art: "assets/img/bazzi.jpeg",
+		playlist_author: "op",
+		playlist_art: "assets/img/best.jpg",
         featured: true,
         likes: 62,
+        dateAdded: '2023-12-20',
 		songs: [
             {
                 cover: "assets/img/eyes.jpeg",
@@ -77,11 +79,12 @@ let playlists = [
     },
     {
         playlistID: 3,
-		playlist_name: "amazing",
-		playlist_author: "o",
-		playlist_art: "assets/img/ariana.jpeg",
+		playlist_name: "wow",
+		playlist_author: "qr",
+		playlist_art: "assets/img/amazing.jpg",
         featured: true,
         likes: 58,
+        dateAdded: '2024-02-10',
 		songs: [
             {
                 cover: "assets/img/stuckwu.png",
@@ -115,11 +118,12 @@ let playlists = [
     },
     {
 		playlistID: 4,
-		playlist_name: "terrific",
-		playlist_author: "p",
-		playlist_art: "assets/img/tate.jpeg",
+		playlist_name: "sweet",
+		playlist_author: "st",
+		playlist_art: "assets/img/terrific.jpg",
         featured: true,
         likes: 53,
+        dateAdded: '2023-11-03',
 		songs: [
             {
                 cover: "assets/img/iusedfly.png",
@@ -153,11 +157,12 @@ let playlists = [
 	},
     {
         playlistID: 5,
-		playlist_name: "slay",
-		playlist_author: "q",
-		playlist_art: "assets/img/sza.jpeg",
+		playlist_name: "good",
+		playlist_author: "uv",
+		playlist_art: "assets/img/super.jpg",
         featured: true,
         likes: 77,
+        dateAdded: '2024-04-22',
 		songs: [
             {
                 cover: "assets/img/sos.png",
@@ -199,10 +204,11 @@ let playlists = [
     {
         playlistID: 6,
 		playlist_name: "super",
-		playlist_author: "r",
-		playlist_art: "assets/img/sabrina.jpeg",
+		playlist_author: "wx",
+		playlist_art: "assets/img/slay.jpg",
         featured: true,
         likes: 44,
+        dateAdded: '2025-02-10',
 		songs: [
             {
                 cover: "assets/img/readyoumind.jpg",
@@ -224,16 +230,25 @@ let playlists = [
                 artist: "Sabrina Carpenter",
                 album: "Short n'Sweet (Deluxe)",
                 duration: "3:07"
-            }
+            },
+            {
+                cover: "assets/img/cosmic.jpeg",
+                title: "3:15",
+                artist: "Bazzi",
+                album: "COSMIC",
+                duration: "2:47"
+            },
+
         ]
     },
     {
 		playlistID: 7,
 		playlist_name: "chilly",
-		playlist_author: "a",
+		playlist_author: "yz",
 		playlist_art: "assets/img/chilly.jpg",
         featured: true,
         likes: 54,
+        dateAdded: '2023-08-19',
 		songs: [
             {
                 cover: "assets/img/freudian.jpg",
@@ -267,11 +282,12 @@ let playlists = [
 	},
     {
         playlistID: 8,
-		playlist_name: "gloomy",
-		playlist_author: "b",
+		playlist_name: "yay",
+		playlist_author: "ab",
 		playlist_art: "assets/img/gloomy.jpg",
         featured: true,
         likes: 51,
+        dateAdded: '2024-06-01',
 		songs: [
             {
                 cover: "assets/img/everyoneAY.jpeg",
@@ -293,16 +309,24 @@ let playlists = [
                 artist: "Cigarettes After Sex",
                 album: "Crush",
                 duration: "5:03"
+            },
+            {
+                cover: "assets/img/sos.png",
+                title: "Kill Bill",
+                artist: "SZA",
+                album: "SOS",
+                duration: "2:33"
             }
         ]
     },
     {
         playlistID: 9,
 		playlist_name: "calm",
-		playlist_author: "c",
+		playlist_author: "cd",
 		playlist_art: "assets/img/calm.jpg",
         featured: true,
         likes: 49,
+        dateAdded: '2024-09-27',
 		songs: [
             {
                 cover: "assets/img/para.jpg",
@@ -324,17 +348,24 @@ let playlists = [
                 artist: "LANY",
                 album: "Malibu Nights",
                 duration: "3:32"
-            }
-
+            },
+            {
+                cover: "assets/img/moonmusic.png",
+                title: "GOOD FEELiNGS",
+                artist: "Coldplay, Ayra Starr",
+                album: "Moon Music",
+                duration: "3:37"
+            },
         ]
     },
     {
 		playlistID: 10,
 		playlist_name: "nice",
-		playlist_author: "d",
+		playlist_author: "ef",
 		playlist_art: "assets/img/nice.jpg",
         featured: true,
         likes: 58,
+        dateAdded: '2025-01-05',
 		songs: [
             {
                 cover: "assets/img/luther.webp",
@@ -357,15 +388,23 @@ let playlists = [
                 album: '"Awaken, My Love"',
                 duration: "5:27"
             },
+            {
+                cover: "assets/img/ctv3.jpg",
+                title: "Cabin Fever",
+                artist: "Jaden",
+                album: "CTV3: Cool Tape Vol.3",
+                duration: "3:15"
+            }
         ]
 	},
     {
         playlistID: 11,
 		playlist_name: "relax",
-		playlist_author: "e",
+		playlist_author: "gh",
 		playlist_art: "assets/img/relax.jpg",
         featured: true,
         likes: 61,
+        dateAdded: '2023-12-30',
 		songs: [
             {
                 cover: "assets/img/niki.jpeg",
@@ -399,11 +438,12 @@ let playlists = [
     },
     {
         playlistID: 12,
-		playlist_name: "everything",
-		playlist_author: "f",
+		playlist_name: "yes",
+		playlist_author: "ij",
 		playlist_art: "assets/img/everything.jpg",
         featured: true,
         likes: 54,
+        dateAdded: '2024-03-14',
 		songs: [
             {
                 cover: "assets/img/30.jpeg",

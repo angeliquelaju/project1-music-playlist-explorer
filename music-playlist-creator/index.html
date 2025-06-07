@@ -6,7 +6,7 @@
     
     <title>Music Playlist Explorer</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,6 +33,7 @@
     </header>
 
     <main>
+        <button id="addPlaylistBtn"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
         <div id = "playlist-cards" class = "playlist-grid">
             <!--cards put here-->
         </div>
@@ -48,10 +49,30 @@
                     <p id = "modalAuthor"></p>
                 </div>
             </div>
-            <button id="shuffleButton">Shuffle</button>
+            <p id = "spacingHelp"></p>
+            <button id="shuffleButton"><i class="fa-solid fa-shuffle" style="color: #ffffff;"></i></button>
             <ul id = "modalSongs"></ul>
         </div>
     </div>
+
+    <div class="modal" id="playlistFormModal" style="display:none;">
+    <div class="modal-content">
+        <span class="close-form">&times;</span>
+        <h2 id="formTitle">Add Playlist</h2>
+        <form id="playlistForm">
+        <label>Playlist Name: <input type="text" id="playlistName" required /></label><br/>
+        <label>Author: <input type="text" id="playlistAuthor" required /></label><br/>
+        <label>Cover Image URL: <input type="text" id="playlistCover" required /></label><br/>
+        <div id="songsContainer">
+            <h3>Songs</h3>
+            <!-- Songs inputs will go here -->
+        </div>
+        <button type="button" id="addSongBtn">Add Song</button><br/>
+        <button type="submit">Save Playlist</button>
+        </form>
+    </div>
+    </div>
+
     <script src="data/data.js"></script>
     <script src="script.js"></script>
     <footer>

@@ -6,22 +6,78 @@
     
     <title>Music Playlist Explorer</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <!-- Your header content here -->
+        <h1 id = "banner">Music Playlist Explorer</h1>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search playlists..." />
+            <span id="search-icon" class="search-icon">&#128269;</span> 
+            <span id="clear-icon" class="clear-icon">&#10006;</span>  
+        </div>
+        <div class="sort-container">
+            <label for="sort-dropdown">Sort By:</label>
+            <select id="sort-dropdown">
+                <option value="" disabled selected>Select Sort Option</option>
+                <option value="name">Playlist Name (A-Z)</option>
+                <option value="likes">Number of Likes</option>
+                <option value="date">Date Added</option>
+            </select>
+        </div>
+        <p class = "nav">
+            <a href = "featured.html">Featured</a>
+            <a href = "index.html">All</a>
+        </p>
     </header>
 
-    <main> 
-        <!-- Your main content here -->
+    <main>
+        <button id="addPlaylistBtn"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+        <div id = "playlist-cards" class = "playlist-grid">
+            <!--cards put here-->
+        </div>
     </main>
 
-    <footer>
-        <!-- Your footer content here -->
-    </footer>
+    <div class = "modal" id = "playlistModal">
+        <div class = "modal-content">
+            <span class = "close">&times;</span>
+            <div class = "titlePic">
+                <img id = "modalCover" src = "">
+                <div class = "formatTitle">
+                    <h3 id = "modalTitle"></h2>
+                    <p id = "modalAuthor"></p>
+                </div>
+            </div>
+            <p id = "spacingHelp"></p>
+            <button id="shuffleButton"><i class="fa-solid fa-shuffle" style="color: #ffffff;"></i></button>
+            <ul id = "modalSongs"></ul>
+        </div>
+    </div>
+
+    <div class="modal" id="playlistFormModal" style="display:none;">
+    <div class="modal-content">
+        <span class="close-form">&times;</span>
+        <h2 id="formTitle">Add Playlist</h2>
+        <form id="playlistForm">
+        <label>Playlist Name: <input type="text" id="playlistName" required /></label><br/>
+        <label>Author: <input type="text" id="playlistAuthor" required /></label><br/>
+        <label>Cover Image URL: <input type="text" id="playlistCover" required /></label><br/>
+        <div id="songsContainer">
+            <h3>Songs</h3>
+            <!-- Songs inputs will go here -->
+        </div>
+        <button type="button" id="addSongBtn">Add Song</button><br/>
+        <button type="submit">Save Playlist</button>
+        </form>
+    </div>
+    </div>
+
     <script src="data/data.js"></script>
     <script src="script.js"></script>
+    <footer>
+        <!-- Your footer content here -->
+         <p>valerie laju</p>
+    </footer>
 </body>
 </html>
